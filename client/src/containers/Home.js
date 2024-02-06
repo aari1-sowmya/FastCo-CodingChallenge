@@ -9,6 +9,7 @@ const Home = () => {
 
     const onLoginButtonClick = (value) => {
         setOnClickLogin(value)
+        setOpenLoginModal(true)
     };
 
     return (

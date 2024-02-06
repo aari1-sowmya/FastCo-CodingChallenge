@@ -17,6 +17,8 @@ const LoginForm = ({ openLoginModal, setOpenLoginModal }) => {
             });
             console.log("User Logged In Successfully:", response.data);
             setOpenLoginModal(false)
+            setEmail("")
+            setPassword("")
             return response
         }
         catch (error) {
@@ -37,10 +39,10 @@ const LoginForm = ({ openLoginModal, setOpenLoginModal }) => {
                 }}
             >
                 <Card sx={{ padding: 3 }}>
-                    <Typography component="h1" variant="h5" align="center">
+                    <Typography component="h1" variant="h5" align="center" color="#293153">
                         Welcome
                     </Typography>
-                    <Typography align="center">
+                    <Typography align="center" color="#293153">
                         Let's get you signed in.
                     </Typography>
                     <Box component="form" onSubmit={handleSubmit} sx={{ mt: 1 }}>
@@ -51,7 +53,6 @@ const LoginForm = ({ openLoginModal, setOpenLoginModal }) => {
                             id="email"
                             label="Email Address"
                             name="email"
-                            autoComplete="email"
                             autoFocus
                             value={email}
                             onChange={e => setEmail(e.target.value)}
@@ -64,7 +65,6 @@ const LoginForm = ({ openLoginModal, setOpenLoginModal }) => {
                             label="Password"
                             type="password"
                             id="password"
-                            autoComplete="current-password"
                             value={password}
                             onChange={e => setPassword(e.target.value)}
                         />
@@ -72,13 +72,13 @@ const LoginForm = ({ openLoginModal, setOpenLoginModal }) => {
                             type="submit"
                             fullWidth
                             variant="contained"
-                            sx={{ mt: 3, mb: 2 }}
+                            sx={{ mt: 3, mb: 2, backgroundColor: '#293153' }}
                         >
                             LOGIN
                         </Button>
                         <Typography align="center">
-                            Do you have an account ?
-                            <Link href="#" >
+                            Do you have an account?
+                            <Link href="#" sx={{ color: '#fa4094' }}>
                                 Sign Up
                             </Link>
                         </Typography>
