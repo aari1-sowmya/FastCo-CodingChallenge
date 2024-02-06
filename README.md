@@ -17,7 +17,7 @@ Tech Stack:
       
 How to run the application?
 ==========================
-- Go to direactory `server` inside the root project
+- Go to directory `server` inside the root project
 - Run `npm run dev` to start both FE and BE parallely.
 - Go to http://localhost:3000/ to see the app.
 - We can also run the FE and BE separately.
