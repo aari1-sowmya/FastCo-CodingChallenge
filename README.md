@@ -15,10 +15,10 @@ Tech Stack:
    1. React js
    2. Material UI
       
-How to run the application?
-==========================
+How to start the application?
+=============================
 - Go to directory `server` inside the root project.
-- Run `npm run dev` to start both FE and BE parallely.
+- Run `npm run dev` in your local to start both FE and BE parallely.
 - Go to http://localhost:3000/ to see the app.
 - We can also run the FE and BE separately.
 
