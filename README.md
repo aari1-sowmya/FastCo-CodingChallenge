@@ -22,6 +22,5 @@ How to start the application?
 - Go to http://localhost:3000/ to see the app.
 - We can also run the FE and BE separately.
 
-   
       
     
